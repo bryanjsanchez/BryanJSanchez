@@ -1,0 +1,31 @@
+<doctype! html>
+<html>
+ <head>
+    <title>How's The Weather?</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bryan J Sanchez">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/weather.css">
+  </head>
+  <body>
+    <h1 class="location">How's the Weather?</h1>
+    <img class="image-icon" src=""><br>
+    <h2>Temperature</h2>
+    <div class="temperature-box">
+      <p class="temperature"></p>
+      <form id="temp-unit">
+        <div><input type="radio" name="temp-unit" value="tempF" onclick="if(this.checked){tempUnits()}" checked>&deg;F</div>
+        <div><input type="radio" name="temp-unit" value="tempC" onclick="if(this.checked){tempUnits()}">&deg;C</div>
+      </form>
+    </div>
+    <footer>
+      <div class="footer row">
+        <p>Created by <a href="http://www.bryanjsanchez.com" target="_blank">Bryan J Sanchez</a> for <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

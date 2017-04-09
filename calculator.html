@@ -1,0 +1,54 @@
+<doctype! html>
+<html>
+ <head>
+    <title>JavaScript Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bryan J Sanchez">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Jura" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+  </head>
+  <body>
+    <h1> JavaScript Calculator</h1>
+    <div id="calculator">
+      <div id="result">
+        <p id=result-text></p>
+      </div>
+      <div class="buttons-row">
+        <button type="button" class="number" value="7">7</button>
+        <button type="button" class="number" value="8">8</button>
+        <button type="button" class="number" value="9">9</button>
+        <button type="button" class="clear-all" value="CE">CE</button>
+        <button type="button" class="clear" value="C">C</button>
+      </div>
+      <div class="buttons-row">
+        <button type="button" class="number" value="4">4</button>
+        <button type="button" class="number" value="5">5</button>
+        <button type="button" class="number" value="6">6</button>
+        <button type="button" class="operator" value="*">&times;</button>
+        <button type="button" class="operator" value="-">-</button>
+      </div>
+      <div class="buttons-row">
+        <button type="button" class="number" value="1">1</button>
+        <button type="button" class="number" value="2">2</button>
+        <button type="button" class="number" value="3">3</button>
+        <button type="button" class="operator" value="/">&divide;</button>
+        <button type="button" class="operator" value="+">+</button>
+      </div>
+      <div class="buttons-row">
+        <button type="button" class="number" value="0">0</button>
+        <button type="button" class="decimal-point" value=".">.</button>
+        <button type="button" class="posNeg" >+/-</button>
+        <button type="button" class="equals">=</button>
+      </div>
+    </div>
+    <footer>
+      <div class="footer row">
+        <p>Created by <a href="http://www.bryanjsanchez.com" target="_blank">Bryan J Sanchez</a> for <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/calculator.js"></script>
+  </body>
+</html>

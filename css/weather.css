@@ -1,0 +1,42 @@
+html {
+  text-align: center;
+  font-family: "Jura";
+  background-color: gray;
+  color: white;
+}
+
+h1 {
+  margin: 2em auto 0;
+  font-size: 3em;
+  max-width: 90%;
+}
+
+.temperature-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature-box p {
+  font-size: 3em;
+  padding-bottom: 0.3em;
+  margin: 0 0.5em;
+}
+
+input[name="temp-unit"] {
+  margin: 0.5em;
+}
+
+.footer {
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}

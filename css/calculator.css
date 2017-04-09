@@ -1,0 +1,127 @@
+html {
+  background-color: #222;
+  font-family: "Orbitron";
+}
+
+h1 {
+  font-size: 25px;
+  color: white;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#result {
+  background-color: #eee;
+  width: 78%;
+  height: 60px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+#result-text {
+  background-color: #eee;
+  width: 78%;
+  height: 30px;
+  margin: 12px auto 0;
+  font-size: 25px;
+  text-align: right;
+}
+
+.button-row {
+  display: flex;
+}
+
+button {
+  margin: 10px 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: white;
+  color: #222;
+  text-align: center;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.equals {
+  width: 100px;
+  background-color: #8BA446;
+  color: white;
+  font-size: 24px;
+}
+
+.clear, .clear-all {
+  background-color: #CD4F39;
+  color: white;
+}
+
+.footer {
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura";
+  color: white;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+
+@media (min-width: 640px) {
+
+  h1 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  #result {
+    width: 85%;
+    height: 80px;
+    margin: 20px auto;
+  }
+
+  #result-text {
+    width: 85%;
+    height: 50px;
+    margin: 25px auto 0;
+    font-size: 35px;
+  }
+
+  button {
+    font-size: 18px;
+    margin: 20px 10px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+  }
+
+  .operator {
+    font-size: 24px;
+  }
+
+  .equals {
+  width: 128px;
+  }
+
+  #calculator {
+    margin-top: 20px; 
+    width: 400px; 
+  }
+}
