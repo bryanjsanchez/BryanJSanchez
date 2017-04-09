@@ -1,0 +1,345 @@
+/*************************
+Overall Styles
+*************************/
+html {
+	height: 100%;
+	width: 100%;
+
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.nav a:hover {
+	transform: scale(1.2);
+	text-shadow: 5px 5px 5px black;
+	transition: transform 0.5s, text-shadow 0.5s;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+p {
+	margin: 5%;
+	font-size: 1em;
+}
+
+/*************************
+Header Styles
+*************************/
+
+header {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	background-image: url("../img/banner.png");
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 100;
+}
+
+.logo {
+	margin: 0.5em auto 0;
+	padding-bottom: .5em;
+	font-family: "Philosopher", sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	color: white;
+  text-shadow: 1px 1px black;
+  border-bottom: solid white 1px;
+  text-align: center;
+}
+
+.nav {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	font-family: "Philosopher", sans-serif;
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 1.2em;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	display: flex;
+}
+
+li a {
+	font-family: "Philosopher", sans-serif;
+	padding: 1em 2em;
+}
+
+/*************************
+Container Styles
+*************************/
+
+h2 {
+	font-family: "Dosis", sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+.container {
+	padding: 30% 0 150px;
+	background-image: url("../img/container.png");
+	display: flex;
+	flex-direction: column;
+	font-family: "Dosis", sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	text-align: center;
+	width: 100%;
+}
+
+img {
+	display: block;
+  width: 50%;
+	margin: auto;
+}
+
+/*************************
+Home Styles
+*************************/
+
+.portrait-big {
+	display: none;
+}
+
+.hotlink,
+.hotlink:visited {
+	color: blue;
+}
+
+.hotlink:hover {
+	text-decoration: underline;
+}
+
+/*************************
+Projects Styles
+*************************/
+
+.projects-container {
+	font-family: "Dosis", sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	text-align: center;
+	
+}
+
+.projects-head {
+	margin: 0.7em auto 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	font-size: 2em;
+}
+
+.project-line {
+	width: 50%;
+	height: 2px;
+	border-radius: 40%;
+	margin: 0 auto;
+	background-color: #666;
+}
+
+.project-item {
+	margin-top: 1em;
+}
+
+.project-name {
+	margin: 2em auto 0;
+	color: #236B8E;
+	width: 100%;
+	font-size: 0.9em;
+}
+
+.project-name:hover {
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+
+.thumbnail {
+	margin: 0.5em auto 0;
+}
+
+/*************************
+Contact Styles
+*************************/
+
+.write {
+	border: 1px solid #333;
+	border-radius: 50%;
+}
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 15%;
+	flex-wrap: wrap;
+}
+
+.social {
+	width: 40px;
+	padding: 20px 40px;
+	margin: -50px 0 100px;
+}
+
+.social:hover {
+	transform: scale(1.5);
+	transition: transform 0.5s;
+}
+
+/*************************
+Footer Styles
+*************************/
+
+footer {
+	display: block;
+	background-color: black;
+	background-image: url("../img/banner.png");
+	font-family: "Philosopher", sans-serif;
+	font-size: 1em;
+	color: white;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	z-index: 100;
+}
+
+/*************************
+Media Queries
+*************************/
+
+@media (min-width: 640px) {
+	
+	header {
+		flex-direction: row;
+	}
+	.nav {
+		align-self: center;
+		margin-right: 5%;
+		font-size: 1.5em;
+	}
+	.logo {
+		border-bottom: none;
+		font-size: 3em;
+		margin-left: 50px;
+	}
+
+	li a {
+		padding: 1em 1em;
+	}
+
+	h2 {
+		font-size: 2.5em;
+		display: inline-block;
+		width: 70%;
+		text-align: left;
+		padding-top: 5%;
+		padding-left: 150px;
+	}
+
+	.contact-head {
+		margin-left: 12%;
+	}
+
+	p {
+		display: inline-block;
+		text-align: center;
+		width: 50%;
+		float: left;
+		margin-top: 0;
+		font-size: 1em;
+	}
+
+	.hotlink {
+		display: inline-block;
+		padding-bottom: 130px;
+	}
+
+	.container {
+		padding: 0;
+		padding-top: 100px;
+		padding-bottom: 0;
+	}
+
+	.portrait-small {
+		display: none;
+	}
+
+	.portrait-big {
+		position: fixed;
+		right: 0;
+		bottom: 50px;
+		border-radius: 0;
+		display: inline;
+		max-width: 500px;
+	}
+
+	.projects-head {
+		margin: 0.5em auto;
+	}
+
+	.projects-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 1000px;
+		margin: auto;
+		padding-bottom: 2em;
+	}
+
+	.project-item {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+		width: 500px;
+	}
+
+	.thumbnail {
+		margin: 0 auto;
+	}
+
+	.project-name {
+		margin: 1em 0 0.5em;
+	}
+
+	.write {
+		width: 300px;
+		height: 300px;
+		position: fixed;
+		right: 10%;
+		top: 25%;
+		margin: auto;
+		display: inline;
+	}
+
+
+	.social-icons {
+		padding-top: 0;
+		padding-bottom: 8%;
+		padding-right: 40%;
+	}
+
+	.social {
+		width: 40px;
+		padding: 20px;
+		margin: 0 20px;
+	}
+}
