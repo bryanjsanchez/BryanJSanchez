@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bryan J Sanchez</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bryan J Sanchez">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Contrail+One|Shadows+Into+Light|Jura" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/tictactoe.css">
+  </head>
+  <body>
+    <div id="win-screen" style="cursor: pointer;">
+      <h2 id="win-message"></h2>
+      <p>click to play again</p>
+    </div>
+    <h1>Tic Tac Toe</h1>
+    <div id="player-select">
+      <h3>Select</h3>
+      <div class="player X" style="cursor: pointer;">X</div>
+      <div class="player O" style="cursor: pointer;">O</div>
+    </div>
+    <div id="board">
+      <div class="row">
+        <div id="TL" class="space" style="cursor: pointer;"></div>
+        <div id="TM" class="space" style="cursor: pointer;"></div>
+        <div id="TR" class="space" style="cursor: pointer;"></div>
+      </div>
+      <div class="row">
+        <div id="ML" class="space" style="cursor: pointer;"></div>
+        <div id="MM" class="space" style="cursor: pointer;"></div>
+        <div id="MR" class="space" style="cursor: pointer;"></div>
+      </div>
+      <div class="row">
+        <div id="BL" class="space" style="cursor: pointer;"></div>
+        <div id="BM" class="space" style="cursor: pointer;"></div>
+        <div id="BR" class="space" style="cursor: pointer;"></div>
+     </div>
+    </div>
+    <footer>
+      <div class="footer row">
+        <p>Created by <a href="http://www.bryanjsanchez.com" target="_blank">Bryan J Sanchez</a> for <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/tictactoe.js"></script>
+  </body>
+</html>

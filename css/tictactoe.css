@@ -1,0 +1,137 @@
+html {
+  background-color: #92393d;
+}
+
+h1 {
+  color: #396992;
+  background-color: white;
+  box-shadow: 5px 5px 5px #333;
+  text-align: center;
+  font-family: "Contrail One";
+  font-size: 4em;
+}
+
+#player-select {
+  background-color: white;
+  width: 65%;
+  height: 300px;
+  z-index: 10;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Shadows Into Light";
+  box-shadow: 10px 10px 10px #333;
+}
+
+h3 {
+  font-size: 3em;
+  margin: 0.5em auto 0;
+  color: #555;
+}
+
+.player {
+  padding: 20px;
+  font-size: 5em;
+  transition: all .2s ease;
+  display: inline-block;
+  color: #888;
+}
+
+.player:hover {
+  transform: scale(1.2);
+  color: black;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 250px;
+  margin: 0 auto;
+  font-family: "Shadows Into Light";
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.space {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  background-color: white;
+  color: #396992;
+  font-size: 3em;
+  line-height: 80px;
+  text-align: center;
+  box-shadow: 5px 5px 5px #333;
+}
+
+#win-screen {
+  margin-top: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  display: none;
+  position: fixed;
+  z-index: 20;
+  text-align: center;
+  opacity: 0.8;
+}
+
+#win-screen h2 {
+  margin: 3.6em auto;
+  font-size: 4.5em;
+  font-family: "Racing Sans One";
+}
+
+#win-screen p {
+  margin-top: -10em;
+}
+
+.footer p {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura";
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+
+  #player-select {
+    margin-top: 70px;
+    width: 300px;
+    height: 300px;
+    border: solid 1px #396992;
+  }
+
+  #board {
+    width: 430px;
+  }
+
+  .space {
+    height: 140px;
+    width: 140px;
+    line-height: 140px;
+    font-size: 5em;
+  }
+
+  #win-screen h2 {
+    margin: 3.35em auto;
+    font-size: 5em;
+    font-family: "Racing Sans One";
+  }
+}
