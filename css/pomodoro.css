@@ -1,0 +1,155 @@
+html {
+  color: white;
+  font-family: "Raleway";
+}
+
+h1 {
+  text-align: center;
+  font-family: "Kalam";
+  font-size: 3em;
+  color: #f9df76;
+  margin: 0.5em auto 0;
+  text-shadow: 1px 1px 1px #111
+}
+
+#topColor {
+  background-color: #0eb26d;
+  width: 100vw;
+  top: 0;
+  position: absolute;
+  z-index: -10;
+}
+
+#bottomColor {
+  background-color: #FF6347;
+  width: 100vw;
+  bottom: 0;
+  position: absolute;
+  z-index: -10;
+}
+
+#buttonContainer {
+  text-align: center;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 1px #999;
+}
+
+::selection {
+  background: none;
+}
+
+.button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0.5em 0;
+  font-size: 2em;
+}
+
+#time, #break {
+  display: inline-block;
+  margin: 0 1em;
+  font-size: 0.8em;
+}
+
+#setBreak, #setTime {
+  display: inline-block;
+  width: 50px;
+  font-size: 2em;
+}
+
+#timerContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url("../img/tomato-silhouette.png");
+  background-size: 100% 100%;
+  width: 284px;
+  height: 240px;
+  margin: auto;
+}
+
+#timerLabel {
+  line-height: 200px;
+  font-size: 2em;
+  vertical-align: bottom;
+}
+
+#timer {
+  font-size: 3em;
+  margin-top: -1.5em;
+  vertical-align: bottom;
+}
+
+#silhouette {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+#startStop {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+#start, #stop {
+  margin: 0 1em;
+  background-color: white;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  color: black;
+  box-shadow: 1px 1px 2px #555;
+}
+
+#start {
+  color: #0eb26d;
+}
+
+#stop {
+  color: #FF6347;
+}
+
+#start:active {
+  box-shadow: none;
+}
+
+#stop:active {
+  box-shadow: none;
+}
+
+.footer p {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura";
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  #timerContainer {
+    width: 360px;
+    height: 300px;
+  }
+
+  #timer {
+    font-size: 5em;
+    margin-top: -0.8em;
+  }
+}
