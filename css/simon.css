@@ -1,0 +1,175 @@
+html {
+  background-color: #222;
+}
+
+#controlBox {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  z-index: 10;
+  width: 50vw;
+  height: 35vh;
+  border-radius: 50%;
+  margin: auto;
+  position: fixed;
+  top: calc(45vh - 17.5vh);
+  right: 0;
+  left: 0;
+  user-select: none;
+  font-family: "Shrikhand";
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: normal;
+  text-shadow: 3px 3px 1px #555;
+  margin: 1.1em auto 0;
+}
+
+#count {
+  font-family: "Text Me One";
+  font-size: 2em;
+  background-color: #222;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+#modeButton {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  border: solid 2px gray;
+  margin: 0 10px;
+}
+
+#modeDisplay {
+  display: inline-block;
+  line-height: 20px;
+  height: 24px;
+  vertical-align: top;
+  margin: 0 10px;
+}
+
+#start {
+  height: 30px;
+  width: 85px;
+  color: black;
+  margin: 0.5em auto ;
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.tile {
+  width: calc(50vw - 10px);
+  height: calc(45vh - 10px);
+  position: fixed;
+}
+
+#green {
+  left: 0;
+  top: 0;
+  background: linear-gradient(to bottom right, #090, #6f6);
+  border-top-left-radius: 50px;
+}
+
+#red {
+  right: 0;
+  top: 0;
+  background: linear-gradient(to bottom left, #c00, #f66);
+  border-top-right-radius: 50px;
+}
+
+#yellow {
+  left: 0;
+  top: calc(45vh + 10px);
+  background: linear-gradient(to top right, #fc0, #ff6);
+  border-bottom-left-radius: 50px;
+}
+
+#blue {
+  right: 0;
+  top: calc(45vh + 10px);
+  background: linear-gradient(to top left, #06c, #0ff);
+  border-bottom-right-radius: 50px;
+}
+
+.footer p {
+  color: #888;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Jura";
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  #controlBox {
+    width: 30%;
+    height: 50%;
+    top: 0;
+    bottom: 6vh;
+    font-family: "Raleway Dots";
+  }
+
+  h3 {
+    font-size: 4em;
+    margin-top: 1em;
+  }
+
+  #count {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+  }
+
+  .tile {
+    height: calc(47vh - 15px);
+    width: calc(50vw - 20px);
+  }
+
+  #modeDisplay {
+    font-size: 2em;
+  }
+
+  #start {
+  height: 50px;
+  margin-top: 2em;
+  font-size: 1em;
+  }
+
+  #green {
+    border-top-left-radius: 100px;
+    top: 10px;
+    left: 10px;
+  }
+
+  #red {
+    border-top-right-radius: 100px;
+    top: 10px;
+    right: 10px;
+  }
+
+  #yellow {
+    border-bottom-left-radius: 100px;
+    bottom: 6vh;
+    top: auto;
+    left: 10px;
+  }
+
+  #blue {
+    border-bottom-right-radius: 100px;
+    bottom: 6vh;
+    top: auto;
+    right: 10px;
+  }
+}

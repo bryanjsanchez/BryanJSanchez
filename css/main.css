@@ -29,7 +29,7 @@ body {
 
 p {
 	margin: 5%;
-	font-size: 1em;
+	font-size: .7em;
 }
 
 /*************************
@@ -52,7 +52,7 @@ header {
 	padding-bottom: .5em;
 	font-family: "Philosopher", sans-serif;
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 1.5em;
 	letter-spacing: 0.1em;
 	color: white;
   text-shadow: 1px 1px black;
@@ -67,7 +67,7 @@ header {
 	font-family: "Philosopher", sans-serif;
 	color: white;
 	text-shadow: 1px 1px black;
-	font-size: 1.2em;
+	font-size: 1em;
 	padding: 0;
 }
 
@@ -87,12 +87,12 @@ Container Styles
 
 h2 {
 	font-family: "Dosis", sans-serif;
-	font-size: 2em;
+	font-size: 1.2em;
 	font-weight: normal;
 }
 
 .container {
-	padding: 30% 0 150px;
+	padding: 30% 0 3em;
 	background-image: url("../img/container.png");
 	display: flex;
 	flex-direction: column;
@@ -117,6 +117,11 @@ Home Styles
 	display: none;
 }
 
+.portrait-small {
+	margin-top: 1em;
+	h
+}
+
 .hotlink,
 .hotlink:visited {
 	color: blue;
@@ -139,11 +144,10 @@ Projects Styles
 }
 
 .projects-head {
-	margin: 0.7em auto 0;
+	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 	width: 100%;
-	font-size: 2em;
 }
 
 .project-line {
@@ -179,23 +183,28 @@ Projects Styles
 Contact Styles
 *************************/
 
+.contact-head {
+	margin: 0 auto;
+}
+
 .write {
 	border: 1px solid #333;
 	border-radius: 50%;
+	display: none;
 }
 
 .social-icons {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding-top: 15%;
 	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
 }
 
 .social {
 	width: 40px;
-	padding: 20px 40px;
-	margin: -50px 0 100px;
+	padding: 30px;
 }
 
 .social:hover {
@@ -231,6 +240,7 @@ Media Queries
 	
 	header {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 	.nav {
 		align-self: center;
@@ -263,9 +273,9 @@ Media Queries
 	p {
 		display: inline-block;
 		text-align: center;
-		width: 50%;
+		width: 40%;
 		float: left;
-		margin-top: 0;
+		margin: 15% 0 0 10%;
 		font-size: 1em;
 	}
 
@@ -277,7 +287,7 @@ Media Queries
 	.container {
 		padding: 0;
 		padding-top: 100px;
-		padding-bottom: 0;
+		padding-bottom: 100px;
 	}
 
 	.portrait-small {
@@ -331,11 +341,14 @@ Media Queries
 		display: inline;
 	}
 
+	.contact-text {
+		margin-top: 3em;
+		margin-bottom: 2em;
+	}
 
 	.social-icons {
 		padding-top: 0;
-		padding-bottom: 8%;
-		padding-right: 40%;
+		margin-left: -120px;
 	}
 
 	.social {
