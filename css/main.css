@@ -25,11 +25,29 @@ a:visited {
 body {
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 }
 
 p {
 	margin: 5%;
 	font-size: .7em;
+}
+
+.hotlink,
+.hotlink:visited {
+	color: blue;
+}
+
+.hotlink:hover {
+	text-decoration: underline;
+}
+
+.line {
+	width: 50%;
+	height: 2px;
+	border-radius: 40%;
+	margin: 0 auto;
+	background-color: #666;
 }
 
 /*************************
@@ -71,12 +89,12 @@ header {
 	padding: 0;
 }
 
-li {
+.nav li {
 	list-style: none;
 	display: flex;
 }
 
-li a {
+.nav li a {
 	font-family: "Philosopher", sans-serif;
 	padding: 1em 2em;
 }
@@ -101,6 +119,8 @@ h2 {
 	font-size: 1.5em;
 	text-align: center;
 	width: 100%;
+	height: 100%;
+	bottom: 0;
 }
 
 img {
@@ -119,16 +139,6 @@ Home Styles
 
 .portrait-small {
 	margin-top: 1em;
-	h
-}
-
-.hotlink,
-.hotlink:visited {
-	color: blue;
-}
-
-.hotlink:hover {
-	text-decoration: underline;
 }
 
 /*************************
@@ -150,14 +160,6 @@ Projects Styles
 	width: 100%;
 }
 
-.project-line {
-	width: 50%;
-	height: 2px;
-	border-radius: 40%;
-	margin: 0 auto;
-	background-color: #666;
-}
-
 .project-item {
 	margin-top: 1em;
 }
@@ -177,6 +179,35 @@ Projects Styles
 .thumbnail {
 	margin: 0.5em auto 0;
 	border-radius: 5px;
+}
+
+.project-bottom-padding {
+	height: 2em;
+}
+
+/*************************
+Blog Styles
+*************************/
+
+.blog-head {
+	margin: 0.5em 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.blog-description {
+	margin: 0 10%;
+	width: 80%;
+}
+
+.blog-posts {
+	text-align: left;
+	margin-left: 1em;
+}
+
+.blog-posts li:hover {
+	text-decoration: underline;
 }
 
 /*************************
@@ -223,9 +254,9 @@ footer {
 	font-family: "Philosopher", sans-serif;
 	font-size: 1em;
 	color: white;
-  text-align: center;
-  padding: 1em;
-  margin: 0;
+  	text-align: center;
+  	padding: 1em;
+  	margin: 0;
 	position: fixed;
 	width: 100%;
 	bottom: 0px;
@@ -253,7 +284,7 @@ Media Queries
 		margin-left: 50px;
 	}
 
-	li a {
+	.nav li a {
 		padding: 1em 1em;
 	}
 
@@ -279,9 +310,13 @@ Media Queries
 		font-size: 1em;
 	}
 
+	.blog-description {
+		margin: 0 10%;
+		width: 80%;
+	}
+
 	.hotlink {
 		display: inline-block;
-		padding-bottom: 130px;
 	}
 
 	.container {
@@ -329,6 +364,16 @@ Media Queries
 
 	.project-name {
 		margin: 1em 0 0.5em;
+	}
+
+	.project-bottom-padding {
+		height: 12em;
+	}
+
+	.blog-description {
+		margin: 0;
+		width: 100%;
+		font-size: 0.8em;
 	}
 
 	.write {
