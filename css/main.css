@@ -4,7 +4,6 @@ Overall Styles
 html {
 	height: 100%;
 	width: 100%;
-
 }
 
 a {
@@ -26,6 +25,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	background-image: url("../img/container.png");
 }
 
 p {
@@ -111,7 +111,6 @@ h2 {
 
 .container {
 	padding: 30% 0 3em;
-	background-image: url("../img/container.png");
 	display: flex;
 	flex-direction: column;
 	font-family: "Dosis", sans-serif;
@@ -323,6 +322,7 @@ Media Queries
 		padding: 0;
 		padding-top: 100px;
 		padding-bottom: 100px;
+		height: 100%;
 	}
 
 	.portrait-small {

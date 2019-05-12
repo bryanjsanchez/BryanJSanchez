@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114414480-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114414480-1');
+  </script>
+  <title>Bryan J Sanchez</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bryan J Sanchez">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="../img/favicon.ico" /> 
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700|Philosopher:400,700|Racing+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../js/animsition/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body class="animsition">
+  <header>
+    <h1 class="logo"><a href="../index.html" class="selected animsition-link">Bryan &bull;J&bull; Sanchez</a></h1>
+    <ul class="nav">
+      <li><a href="../index.html" class="animsition-link">Home</a></li>
+      <li><a href="../projects.html" class="animsition-link">Projects</a></li>
+      <li><a href="../blog.html" class="animsition-link">Blog</a></li>
+      <li><a href="../contact.html" class="selected animsition-link">Contact</a></li>
+    </ul>
+  </header>
+  <div class="container">
+    <h1>Automata and Machines</h1>
+    <p class="post">
+Automata and state machines are used to model a systems possible states. The state is determined by the system’s history. In other words, the current state will determined by the sequence of previous inputs. Each state can read input from the environment and transition into another state, or possibly remain in the same state. These inputs and choices can be deterministic or non deterministic. Automata are useful when you want to represent an entity that has a set of distinct sets in which certain behaviors will affect its state and can be predicted.
+<br><br>
+It is also possible to represent an automata with infinite states using a pushdown stack automaton or machine. An example of a useful application of infinite state automata is the balancing of parenthesis in a text parser. 
+    </p>
+  </div>
+  <footer>
+    <span>&copy;2018 Bryan J Sanchez</span>
+  </footer>
+  <script src="../js/jquery-3.1.0.min.js"></script>
+  <script src="../js/animsition/animsition.min.js"></script>
+  <script>
+    $(".animsition").animsition();
+  </script>
+</body>
+</html>

@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bryan J Sanchez</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Bryan J Sanchez">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="shortcut icon" href="img/favicon.ico" /> 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700|Philosopher:400,700|Racing+Sans+One" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="js/animsition/animsition.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body class="animsition">
-    <header>
-      <h1 class="logo"><a href="index.html" class="selected animsition-link">Bryan &bull;J&bull; Sanchez</a></h1>
-      <ul class="nav">
-        <li><a href="index.html" class="animsition-link">Home</a></li>
-        <li><a href="projects.html" class="selected animsition-link">Projects</a></li>
-        <li><a href="blog.html" class="animsition-link">Blog</a></li>
-        <li><a href="contact.html" class="animsition-link">Contact</a></li>
-      </ul>
-    </header>
-    <div class="container">
-      <h2 class="blog-head">Blog</h2>
-      <p class="blog-description">This is a blog for the course INSO4101 "Introduction to Software Engineering" taught by <a class="hotlink" href="http://math.uprm.edu/people/peoplefind.php?person=Schutz-Schmuck,%20Marko" target="_blank">Professor Marko Schutz</a> at the University of Puerto Rico.</p>
-      <ul class="blog-posts">
-        <li><a href="">Posts to come!</a></li>
+<head>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114414480-1"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
 
-      </ol>
-    </div>
-    <footer>
-      <span>&copy;2016-2017 Bryan J Sanchez</span>
-    </footer>
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/animsition/animsition.min.js"></script>
-    <script>
-      $(".animsition").animsition();
-    </script>
-  </body>
+   gtag('config', 'UA-114414480-1');
+ </script>
+ <title>Bryan J Sanchez</title>
+ <meta charset="UTF-8">
+ <meta name="author" content="Bryan J Sanchez">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link rel="shortcut icon" href="img/favicon.ico" /> 
+ <link rel="stylesheet" href="css/normalize.css">
+ <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700|Philosopher:400,700|Racing+Sans+One" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="js/animsition/animsition.min.css">
+ <link rel="stylesheet" type="text/css" href="css/main.css">
+ <link rel="stylesheet" type="text/css" href="css/blog.css">
+</head>
+<body class="animsition">
+  <header>
+    <h1 class="logo"><a href="index.html" class="selected animsition-link">Bryan &bull;J&bull; Sanchez</a></h1>
+    <ul class="nav">
+      <li><a href="index.html" class="animsition-link">Home</a></li>
+      <li><a href="projects.html" class="selected animsition-link">Projects</a></li>
+      <li><a href="blog.html" class="animsition-link">Blog</a></li>
+      <li><a href="contact.html" class="animsition-link">Contact</a></li>
+    </ul>
+  </header>
+  <div class="container">
+    <h2 class="blog-head">Blog</h2>
+    <p class="blog-description">This is a blog for the course INSO4101 "Introduction to Software Engineering" taught by <a class="hotlink" href="http://math.uprm.edu/people/peoplefind.php?person=Schutz-Schmuck,%20Marko" target="_blank">Professor Marko Schutz</a> at the University of Puerto Rico. <br> Each post is intended to be a general summary of the topic that was discussed in class each week.</p>
+    <ul class="blog-posts">
+      <li><a href="blog/amazon.html">How Amazon Web Services Uses Formal Methods</a></li>
+      <li><a href="blog/triptychparadigm.html">Triptych Paradigm</a></li>
+      <li><a href="blog/documents.html">Documents</a></li>
+      <li><a href="blog/automataandmachines.html">Automata and Machines</a></li>
+      <li><a href="blog/petrinets.html">Petri Nets</a></li>
+    </ol>
+  </div>
+  <footer>
+    <span>&copy;2018 Bryan J Sanchez</span>
+  </footer>
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/animsition/animsition.min.js"></script>
+  <script>
+    $(".animsition").animsition();
+  </script>
+</body>
 </html>
 

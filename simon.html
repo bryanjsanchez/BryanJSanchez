@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simon!</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Bryan J Sanchez">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Shrikhand|Text+Me+One|Raleway+Dots|Jura" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/simon.css">
-  </head>
-  <body>
-    <div id="controlBox">
-      <h3>Simon!</h3>
-      <div id="count">00</div> </br>
-      <div id="modeDisplay">Easy</div>
-      <div id="modeButton"></div></br>
-      <button id="start" style="cursor: pointer;">Start</button>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114414480-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114414480-1');
+  </script>
+  <title>Simon!</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bryan J Sanchez">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand|Text+Me+One|Raleway+Dots|Jura" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/simon.css">
+</head>
+<body>
+  <div id="controlBox">
+    <h3>Simon!</h3>
+    <div id="count">00</div> </br>
+    <div id="modeDisplay">Easy</div>
+    <div id="modeButton"></div></br>
+    <button id="start" style="cursor: pointer;">Start</button>
+  </div>
+  <div id="green" class="tile" value="1" style="cursor: pointer;"></div>
+  <div id="red" class="tile" value="2" style="cursor: pointer;"></div>
+  <div id="yellow" class="tile" value="3" style="cursor: pointer;"></div>
+  <div id="blue" class="tile" value="4" style="cursor: pointer;"></div>
+  <footer>
+    <div class="footer row">
+      <p>Created by <a href="http://www.bryanjsanchez.com" target="_blank">Bryan J Sanchez</a> for <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>.</p>
     </div>
-    <div id="green" class="tile" value="1" style="cursor: pointer;"></div>
-    <div id="red" class="tile" value="2" style="cursor: pointer;"></div>
-    <div id="yellow" class="tile" value="3" style="cursor: pointer;"></div>
-    <div id="blue" class="tile" value="4" style="cursor: pointer;"></div>
-    <footer>
-      <div class="footer row">
-        <p>Created by <a href="http://www.bryanjsanchez.com" target="_blank">Bryan J Sanchez</a> for <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>.</p>
-      </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="js/simon.js"></script>
-  </body>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/simon.js"></script>
+</body>
 </html>

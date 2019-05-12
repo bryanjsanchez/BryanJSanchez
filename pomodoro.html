@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pomodoro Clock</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Bryan J Sanchez">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Kalam|Raleway|Jura" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/pomodoro.css">
-  </head>
-  <body>
-    <div id="topColor"></div>
-    <div id="bottomColor"></div>
-    <h1>Pomodoro Clock</h1>
-    <div id="buttonContainer">
-      <div id="time">
-        <div>Set Timer</div>
-        <span id="minusTime" class="button" style="cursor: pointer;">-</span>
-        <span id="setTime">25</span>
-        <span id="plusTime" class="button" style="cursor: pointer;">+</span>
-      </div>
-      <div id="break">
-        <div>Set Break</div>
-        <span id="minusBreak" class="button" style="cursor: pointer;">-</span>
-        <span id="setBreak">5</span>
-        <span id="plusBreak" class="button" style="cursor: pointer;">+</span>
-      </div>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114414480-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114414480-1');
+  </script>
+  <title>Pomodoro Clock</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bryan J Sanchez">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Raleway|Jura" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/pomodoro.css">
+</head>
+<body>
+  <div id="topColor"></div>
+  <div id="bottomColor"></div>
+  <h1>Pomodoro Clock</h1>
+  <div id="buttonContainer">
+    <div id="time">
+      <div>Set Timer</div>
+      <span id="minusTime" class="button" style="cursor: pointer;">-</span>
+      <span id="setTime">25</span>
+      <span id="plusTime" class="button" style="cursor: pointer;">+</span>
     </div>
-    <div id="timerContainer">
-      <div id="timerLabel">Session</div>
-      <div id="timer"></div>
+    <div id="break">
+      <div>Set Break</div>
+      <span id="minusBreak" class="button" style="cursor: pointer;">-</span>
+      <span id="setBreak">5</span>
+      <span id="plusBreak" class="button" style="cursor: pointer;">+</span>
     </div>
-    <div id="startStop">
-      <span id="stop" style="cursor: pointer;">Stop</span>
-      <span id="start" style="cursor: pointer;">Start</span>
+  </div>
+  <div id="timerContainer">
+    <div id="timerLabel">Session</div>
+    <div id="timer"></div>
+  </div>
+  <div id="startStop">
+    <span id="stop" style="cursor: pointer;">Stop</span>
+    <span id="start" style="cursor: pointer;">Start</span>
+  </div>
+  <footer>
+    <div class="footer row">
+      <p>Created by <a href="http://www.bryanjsanchez.com" target="_blank">Bryan J Sanchez</a> for <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>.</p>
     </div>
-    <footer>
-      <div class="footer row">
-        <p>Created by <a href="http://www.bryanjsanchez.com" target="_blank">Bryan J Sanchez</a> for <a href="http://www.freecodecamp.com" target="_blank">freeCodeCamp</a>.</p>
-      </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="js/pomodoro.js"></script>
-  </body>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/pomodoro.js"></script>
+</body>
 </html>
